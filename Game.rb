@@ -1,5 +1,5 @@
 class Game
-  attr_accessor :game_start, :ask_question, :player1, :player2, :current_player
+  attr_accessor :game_start, :ask_question, :player1, :player2, :current_player, :declare_winner
 
   def initialize(player1, player2)
     @winner
@@ -24,6 +24,15 @@ class Game
       return false
     else return true
     end
+  end
+
+  def declare_winner(player1, player2)
+    if player1.lives == 0 
+      winner = player2
+    elsif player2.lives == 0
+      winner = player1
+    end
+    puts "The winner is #{winner.name}"
   end
 
 end

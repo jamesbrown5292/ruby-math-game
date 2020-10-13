@@ -31,5 +31,10 @@ while player1.lives > 0 && player2.lives > 0
 
   game.current_player = turn.switch_turn(game.current_player, player1, player2)
 
-
 end
+
+game.declare_winner(player1, player2)
+
+
+
+
