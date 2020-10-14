@@ -32,7 +32,8 @@ class Game
     elsif player2.lives == 0
       winner = player1
     end
-    puts "The winner is #{winner.name}"
+    puts "--- GAME OVER ---"
+    puts "The winner is #{winner.name} with a score of #{winner.lives}/3"
   end
 
 end

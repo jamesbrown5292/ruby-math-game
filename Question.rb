@@ -7,7 +7,7 @@ class Question
   end
 
   def question_body
-    "What is #{@v1} + #{@v2}"
+    "what is #{@v1} + #{@v2}"
   end
 
 
